@@ -1,0 +1,255 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+/*表头格式偏移问题*/
+body .el-table th.gutter{
+     display: table-cell!important;
+ }
+body .el-table colgroup.gutter{
+    display: table-cell!important;
+}
+.el-loading{
+  position: absolute;
+  z-index: 2000;
+  background-color: rgba(255,255,255,.7);
+  margin: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+.el-loading-spinner{
+  top: 50%;
+  margin-top: -21px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+}
+
+.app-container{
+  margin: 20px;
+}
+
+/* 添加弹出框 */
+.el-dialog{
+    width: 700px !important;
+}
+.el-select{
+    width: 100%;
+}
+/* 表格样式 */
+/* 排序按钮 */
+.el-table .caret-wrapper{
+    float: right;
+    margin-top: -4px;
+}
+/* 表格字体颜色 */
+.el-table .cell{
+    color: #000000;
+}
+/* 标题栏字体样式 */
+.el-table th>.cell{
+    color: #101010;
+    /* font-size: 17px; */
+    font-weight: 600;
+}
+/* 标题栏背景色 */
+.el-table th{
+    background: #ececec !important;
+}
+/* 表格边框 */
+.el-table td, .el-table th.is-leaf{
+    border-left: 1px solid #c2c2c2 !important;
+    border-collapse: collapse;
+    border-bottom: 1px solid #c2c2c2 !important;
+}
+.el-table td:last-child{
+    border-right: 1px solid #c2c2c2 !important;
+}
+/* 表格最后一根横边框 */
+.el-table::before{
+    height: 0 !important;
+}
+/* 表格最后一根竖边框 */
+.el-table--border::after, .el-table--group::after{
+    width: 0 !important;
+}
+/* 条数 */
+.number{
+    margin-top: 30px;
+    height: 16px;
+    }
+.number>div{
+    float: right;
+}
+.number span{
+    color: #0099ff;
+}
+/* 分页 */
+.pag-wrap{
+    height: 36px;
+    margin-top: 20px;
+}
+.pag{
+    float: right;
+}
+
+/*滚动条*/
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #c2c2c2;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background:#c2c2c2;
+}
+
+
+/*头部*/
+.head-nav {
+    width: 100%;
+    height: 60px;
+    min-width: 600px;
+    padding: 0px, 55px;
+    background: #303542;
+    color: #fff;
+  }
+  .logo-container {
+    line-height: 60px;
+    /* min-width: 400px; */
+  }
+  .logo {
+    height: 50px;
+    /* width: 50px; */
+    margin-right: 5px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .title {
+    vertical-align: middle;
+    font-size: 22px;
+    font-family: "Microsoft YaHei";
+    letter-spacing: 3px;
+  }
+  .user {
+    line-height: 60px;
+    text-align: right;
+    float: right;
+    padding-right: 10px;
+  }
+  .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .welcome {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    padding: 0 5px;
+  }
+  .name {
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  .comename {
+    font-size: 12px;
+  }
+  .avatarname {
+    margin: 5px;
+    font-weight: bolder;
+  }
+  .username {
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  .el-dropdown {
+    color: #fff;
+  }
+  .el-menu.el-menu--horizontal,
+  .el-menu--horizontal > .el-menu-item.is-active,
+  .el-menu--horizontal > .el-menu-item {
+    border-bottom: 0px;
+  }
+  .el-menu--horizontal > .el-menu-item.is-active,
+  .el-menu--horizontal .el-menu .el-menu-item.is-active,
+  .el-menu--horizontal .el-menu .el-submenu.is-active > .el-submenu__title {
+    color: #fff !important;
+    font-weight: 600;
+  }
+  .el-menu-item.is-active {
+    background-color: #307bac !important;
+  }
+  .el-menu--horizontal > .el-menu-item {
+    font-size: 16px !important;
+  }
+  .slot_title {
+    font-size: 16px !important;
+    color: #fff !important;
+  }
+  .logo-container {
+    padding-left: 25px;
+  }
+
+/* 表单操作图标间隙 */
+.el-table .cell i {
+  margin: 0 8px;
+}
+
+.el-table .cell{
+  cursor: pointer;
+}
