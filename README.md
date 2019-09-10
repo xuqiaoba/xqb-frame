@@ -1,3 +1,21 @@
-# xqb-frame
-基于Vue Cli3.0+Element-UI结合实际项目整理的一套实用且开箱即用的后台系统框架，里面抽取、整理了很多公用方法，不仅适用此项目框架。持续更新中......
-常用模块：用户管理、角色管理、角色权限管理
+# client
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
